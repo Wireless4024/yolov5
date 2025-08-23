@@ -69,7 +69,7 @@ See the [YOLOv5 Docs](https://docs.ultralytics.com/yolov5/) for full documentati
 <summary>Install</summary>
 
 Clone the repository and install dependencies in a [**Python>=3.8.0**](https://www.python.org/) environment. Ensure you have [**PyTorch>=1.8**](https://pytorch.org/get-started/locally/) installed.
-
+- Use python v3.9
 ```bash
 # Clone the YOLOv5 repository
 git clone https://github.com/ultralytics/yolov5
@@ -79,6 +79,8 @@ cd yolov5
 
 # Install required packages
 pip install -r requirements.txt
+# for rtx 50xx
+pip install torch==2.8.0+cu128 torchvision==0.23.0+cu128 torchaudio==2.8.0+cu128 --index-url https://download.pytorch.org/whl/cu128
 ```
 
 </details>

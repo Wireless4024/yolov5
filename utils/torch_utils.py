@@ -348,7 +348,7 @@ def copy_attr(a, b, include=(), exclude=()):
             setattr(a, k, v)
 
 
-def smart_optimizer(model, name="Adam", lr=0.001, momentum=0.9, decay=1e-5):
+def smart_optimizer(model, name="AdamW", lr=0.001, momentum=0.9, decay=1e-5):
     """
     Initializes YOLOv5 smart optimizer with 3 parameter groups for different decay configurations.
 
